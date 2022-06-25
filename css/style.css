@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    /* background-color: rgb(189, 250, 189); */
+
+}
+ul{
+    list-style: none;
+}
+.first{
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 1000;
+    color: white;
+    margin: 40px;
+    
+}
+header{
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.31)) ,url(/files/FoodCourtBG.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 40px;
+
+
+}
+.navbar{
+    display: flex;
+    padding: 40px;
+    justify-content: end;
+
+}
+.bg{
+    
+   
+
+
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+
+}
+.title h1{
+   
+    font-size: 9em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: white;
+
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    width: 70%;
+    height: 50px;
+    background-color: rgba(245, 245, 245, 0.53);
+    border-radius: 30px;
+
+    
+
+}
+.search-bar input{
+    flex: 1;
+    color: black;
+    font-size: 30px;
+    word-spacing: 15px;
+    text-align: center;
+    border: none;
+    background-color: rgba(245, 245, 245, 0);
+
+   
+}
+.search-bar button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.search-bar button img{
+    height: 40px;
+    padding: 5px;
+    margin-right: 10px;
+    
+
+
+}
+.food-list{
+    margin: 10px;
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+.food-item{
+    border: 1px rgba(215, 215, 215, 0.916) solid;
+   border-radius: 30px;
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+
+}
+.food-detail{
+    display: flex;
+    flex-direction: column;
+}
+.food-image{
+    width:100% ;
+    height: 300px;
+
+}
+.food-image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    
+    
+}
+.food-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.food-info h3{
+    font-size: 30px;
+    font-family: 'poppins', monospace;
+    margin-bottom: 10px;
+
+}
+.food-info p{
+    font-size: 20px;
+}
+::placeholder {
+    color: rgb(1, 1, 1);
+    opacity: 1;
+  }
+@media screen and (max-width:600px) {
+    .food-list{
+        margin: 10px;
+        display: grid;
+        grid-gap:20px;
+        grid-template-columns: 1fr;
+
+    }
+    .search-bar{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: rgba(249, 248, 248, 0.53);
+        border-radius: 30px;
+    
+    }
+    .search-bar input{
+        flex: 1;
+        font-size: 10px;
+        text-align: center;
+        word-spacing: 0;
+        border: none;
+        background-color: rgba(245, 245, 245, 0);
+       
+    }
+    .title h1{
+   
+        font-size: 5em;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        color: white;
+    
+    }
+    header{
+        background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.31)) ,url(/files/FoodCourtBG.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 40px;
+    
+    
+    }
+    .navbar{
+        display: flex;
+        padding: 20px;
+    
+    }
+  
+   
+    
+  }
+  .food-info :hover{
+    color: aqua;
+
+  }
+  .food-image:hover{
+    border: 5px solid blue;
+    width: 100%;
+    height: 310px;
+    border-radius: 30px;
+  }
